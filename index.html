@@ -16,62 +16,64 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.scss" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    <div class="card">
-      <div class="container">
-        <form>
-          <div class="form_container">
-            <div class="block">
-              <label for="day">Day</label>
-              <input
-                type="number"
-                name="day"
-                id="day"
-                placeholder="DD"
-              /><small></small>
+    <main>
+      <div class="card">
+        <div class="container">
+          <form>
+            <div class="form_container">
+              <div class="block">
+                <label for="day">Day</label>
+                <input
+                  type="number"
+                  name="day"
+                  id="day"
+                  placeholder="DD"
+                /><small></small>
+              </div>
+              <div class="block">
+                <label for="month">Month</label>
+                <input
+                  type="number"
+                  name="month"
+                  id="month"
+                  placeholder="MM"
+                /><small></small>
+              </div>
+              <div class="block">
+                <label for="year">Year</label>
+                <input
+                  type="number"
+                  name="year"
+                  id="year"
+                  placeholder="YYYY"
+                /><small></small>
+              </div>
             </div>
-            <div class="block">
-              <label for="month">Month</label>
-              <input
-                type="number"
-                name="month"
-                id="month"
-                placeholder="MM"
-              /><small></small>
+            <div class="submit_block">
+              <hr />
+              <button type="submit" class="submit_btn">
+                <img src="./assets/images/icon-arrow.svg" alt="icon" />
+              </button>
             </div>
-            <div class="block">
-              <label for="year">Year</label>
-              <input
-                type="number"
-                name="year"
-                id="year"
-                placeholder="YYYY"
-              /><small></small>
-            </div>
+          </form>
+          <div class="output">
+            <h1><span id="YY">--</span> years</h1>
+            <h1><span id="MM">-- </span>months</h1>
+            <h1><span id="DD">--</span> days</h1>
           </div>
-          <div class="submit_block">
-            <hr />
-            <button type="submit" class="submit_btn">
-              <img src="./assets/images/icon-arrow.svg" alt="icon" />
-            </button>
-          </div>
-        </form>
-        <div class="output">
-          <h1><span id="YY">--</span> years</h1>
-          <h1><span id="MM">-- </span>months</h1>
-          <h1><span id="DD">--</span> days</h1>
         </div>
       </div>
-    </div>
-    <div class="attribution">
+    </main>
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/PaulaR-05">Gabriela de Paula</a>.
-    </div>
+    </footer>
     <script src="src/app.js"></script>
   </body>
 </html>
