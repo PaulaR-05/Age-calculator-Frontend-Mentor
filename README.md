@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/live_url.mp4)
+![](./design/desktop-preview.jpg)
 
 ### Links
 
