@@ -22,48 +22,51 @@
   <body>
     <main>
       <div class="card">
-        <div class="container">
+        <div class="card_info">
           <form>
-            <div class="form_container">
-              <div class="block">
-                <label for="day">Day</label>
+            <div class="card_form">
+              <div class="card_block">
+                <label for="dayInput">Day</label>
                 <input
                   type="number"
-                  name="day"
-                  id="day"
+                  name="dayInput"
+                  id="dayInput"
+                  min="1"
                   placeholder="DD"
                 /><small></small>
               </div>
-              <div class="block">
-                <label for="month">Month</label>
+              <div class="card_block">
+                <label for="monthInput">Month</label>
                 <input
                   type="number"
-                  name="month"
-                  id="month"
+                  name="monthInput"
+                  id="monthInput"
+                  min="1"
                   placeholder="MM"
                 /><small></small>
               </div>
-              <div class="block">
-                <label for="year">Year</label>
+              <div class="card_block">
+                <label for="yearInput">Year</label>
                 <input
                   type="number"
-                  name="year"
-                  id="year"
+                  name="yearInput"
+                  id="yearInput"
+                  min="0"
                   placeholder="YYYY"
                 /><small></small>
               </div>
             </div>
-            <div class="submit_block">
+            <div class="card_submit">
               <hr />
               <button type="submit" class="submit_btn">
                 <img src="./assets/images/icon-arrow.svg" alt="icon" />
               </button>
             </div>
           </form>
-          <div class="output">
-            <h1><span id="YY">--</span> years</h1>
-            <h1><span id="MM">-- </span>months</h1>
-            <h1><span id="DD">--</span> days</h1>
+          <div class="outputData">
+            <h1><span id="yearOut">--</span> years</h1>
+            <h1><span id="monthOut">-- </span>months</h1>
+            <h1><span id="dayOut">--</span> days</h1>
           </div>
         </div>
       </div>
