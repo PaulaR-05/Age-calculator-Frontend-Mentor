@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/live_url.mp4)
+![](./design/desktop-preview.jpg)
 
 ### Links
 
@@ -54,39 +54,7 @@ Users should be able to:
 
 ```js
 function validateUserInfo() {
-  const inputField = document.querySelectorAll("input");
-  let checkValue = true;
-  inputField.forEach((i) => {
-    const ele = i.parentElement;
-    if (!i.value) {
-      i.style.borderColor = "#ff5757";
-      ele.querySelector("small").innerText = "this field is required.";
-      checkValue = false;
-    } else if (dayInput.value > 31 && monthInput.value > 12) {
-      dayInput.style.borderColor = "#ff5757";
-      monthInput.style.borderColor = "#ff5757";
-      dayInput.parentElement.querySelector("small").innerText =
-        "must be a valid day.";
-      monthInput.parentElement.querySelector("small").innerText =
-        "must be a valid month.";
-      checkValue = false;
-    } else if (monthInput.value > 12) {
-      monthInput.style.borderColor = "#ff5757";
-      monthInput.parentElement.querySelector("small").innerText =
-        "must be a valid month.";
-      checkValue = false;
-    } else if (dayInput.value > 31) {
-      dayInput.style.borderColor = "#ff5757";
-      dayInput.parentElement.querySelector("small").innerText =
-        "must be a valid day.";
-      checkValue = false;
-    } else {
-      i.style.borderColor = "black";
-      ele.querySelector("small").innerText = "";
-      checkValue = true;
-    }
-  });
-  return checkValue;
+...
 }
 ```
 
