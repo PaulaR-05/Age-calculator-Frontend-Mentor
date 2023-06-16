@@ -57,6 +57,10 @@ form {
 label {
   text-transform: uppercase;
   font-weight: 600;
+  color: var(--Smokey-grey);
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
 }
 
 input {
